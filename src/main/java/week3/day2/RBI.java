@@ -5,9 +5,9 @@ public interface RBI {
 	public abstract void minimumBalance();
 	void maximumLoanAmount();
 	
-	default void covidLoan() {
-		
-	}
+////	default void covidLoan() {
+//		
+//	}
 	
 	
 

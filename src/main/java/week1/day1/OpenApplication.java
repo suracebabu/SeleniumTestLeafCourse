@@ -30,7 +30,7 @@ public class OpenApplication {
 		
 		ChromeDriver driver = new ChromeDriver();
 		
-		System.out.println(driver.manage());
+//		System.out.println(driver.manage());
 		
 		driver.manage().window().maximize();
 		

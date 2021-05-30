@@ -67,7 +67,7 @@ public class LearnString {
 			System.out.print(eachWord);
 			
 		}
-		System.out.println(str4.split(str4));
+//		System.out.println(str4.split(str4));
 	}
 	
 	

@@ -26,7 +26,7 @@ public class RemoveDuplicates {
 				
 		}
 		
-		System.out.println(setChar);
+//		System.out.println(setChar);
 	}
 
 }

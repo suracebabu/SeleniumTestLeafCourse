@@ -23,7 +23,7 @@ public class LearnSet {
 		
 		//values.add("Hari");
 		
-		System.out.println(values);
+//		System.out.println(values);
 		
 		//copy data from one collection to another
 		List<String> listValues  =  new ArrayList<String>(values);

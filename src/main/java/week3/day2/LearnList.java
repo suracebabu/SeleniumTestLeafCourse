@@ -33,11 +33,11 @@ public class LearnList {
 		//to get the last item
 		//System.out.println(values.get(values.size()-1));
 		
-		System.out.println(values);
+//		System.out.println(values);
 		//to sort the data in ascending order
 		Collections.sort(values); //only for list
 		
-		System.out.println(values);
+//		System.out.println(values);
 		
 		/*
 		 * for (int i = values.size()-1; i >= 0 ; i--) {
