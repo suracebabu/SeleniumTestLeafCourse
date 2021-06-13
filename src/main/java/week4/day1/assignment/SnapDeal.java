@@ -15,8 +15,7 @@ public class SnapDeal {
 		WebDriverManager.chromedriver().setup();
 		
 		ChromeOptions options = new ChromeOptions();
-		
-		options.addArguments("--disable-notifications");
+		options.addArguments("disable-infobars");
 		
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -35,12 +34,8 @@ public class SnapDeal {
 	builder.moveToElement(shirts).click(shirts).perform();
 
 	WebElement firstImage = driver.findElementByXPath("(//picture[@class='picture-elem']//img)[1]");
-	
-	
 	builder.moveToElement(firstImage).perform();
-	
 	WebElement quickView = driver.findElementByXPath("(//picture[@class='picture-elem']//img/following::div[contains(text(),'Quick View')])[1]");
-	
 	builder.click(quickView).perform();
 	
 	driver.quit();

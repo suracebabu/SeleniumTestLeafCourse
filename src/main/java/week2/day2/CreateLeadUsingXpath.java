@@ -49,7 +49,6 @@ public class CreateLeadUsingXpath {
 		//Step4********** Click on CRM/SFA Link******************************************************************************
 		driver.findElementByLinkText("CRM/SFA").click();
 		
-		driver.findElementByXPath("").click();
 		
 		
 		//Step5*********** Click on Leads Button*****************************************************************************
@@ -124,7 +123,7 @@ public class CreateLeadUsingXpath {
 		//Step6c*******************Primary Addresss***************************************************************
 		
 		driver.findElementByXPath("//input[@id='createLeadForm_generalToName']").sendKeys("primarynametest");
-		driver.findElementByXPath("//input[@id='generalAddress1']").sendKeys("ColumbusRoad");
+		driver.findElementByXPath("//input[@id='createLeadForm_generalAddress1']").sendKeys("ColumbusRoad");
 		
 		driver.findElementByXPath("//input[@id='createLeadForm_generalCity']").sendKeys("Naperville");
 		

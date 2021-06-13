@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LeafTab TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Leads TestSet(failed)">
+    <classes>
+      <class name="org.testcase.CreateLead">
+        <methods>
+          <include name="runCreateTestLead"/>
+        </methods>
+      </class> <!-- org.testcase.CreateLead -->
+    </classes>
+  </test> <!-- Leads TestSet(failed) -->
+</suite> <!-- Failed suite [LeafTab TestSuite] -->
