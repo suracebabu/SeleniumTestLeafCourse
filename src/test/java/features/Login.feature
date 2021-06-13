@@ -8,6 +8,7 @@ And Enter the password as <password>
 When click on Login button
 Then Home_page_should_be_displayed
 And DemoSalesManager_should_be_displayed
+And Close_the_Browser_Window
 
 Examples:
 |username|password|
@@ -24,3 +25,4 @@ When click on Login button
 Then Home_page_should_be_displayed
 And DemoSalesManager_should_be_displayed
 But Error_message_should_be_displayed
+And Close_the_Browser_Window

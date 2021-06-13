@@ -19,6 +19,7 @@ And   Enter_the_lastName as <lastName>
 And   Enter_the_phoneNumber as <phoneNumber>
 When  Click_on_CreateLead_SubmitButton
 Then  New_CreateLead_information_is_Created
+And Close_the_Browser_Window
 
 Examples:
 |username|password|companyName|firstName|lastName|phoneNumber|

@@ -13,7 +13,7 @@ Given Click_on_Lead_Link
 And   Find_Lead_through_Phone_Number as <phoneNumber>
 When  Delete_the_First_Lead
 Then  Verify_Lead_information_is_deleted_Successfully
-
+And Close_the_Browser_Window
 Examples:
 |username|password|companyName|firstName|lastName|phoneNumber|companyName|
 |'Demosalesmanager'|'crmsfa'|'verizon'|'suram'|'aravind'|'99'|'verizon'|

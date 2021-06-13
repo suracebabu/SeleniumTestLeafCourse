@@ -144,4 +144,9 @@ public class LeadsTestCases {
 	public void errorMessageDisplayed() {
 			System.out.println("Error message should be displayed");
 	}
+	
+	@And("Close_the_Browser_Window")
+	public void close_the_browser() {
+		driver.close();
+	}
 	}

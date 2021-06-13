@@ -14,7 +14,7 @@ And   Find_Lead_through_Phone_Number as <phoneNumber>
 When  Edit_the_first_lead_companyName as <companyName>
 And   Click_Edit_Submit
 Then  Verify_Lead_information_is_Edited_Successfully
-
+And Close_the_Browser_Window
 Examples:
 |username|password|companyName|firstName|lastName|phoneNumber|companyName|
 |'Demosalesmanager'|'crmsfa'|'verizon'|'suram'|'aravind'|'98'|'verizon'|
