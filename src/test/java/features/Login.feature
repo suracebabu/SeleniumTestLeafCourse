@@ -1,8 +1,9 @@
 Feature: Login functionality of leaftap application
 
+@smoke@functional
 Scenario: TC001_Login with positive data
-Given Open_the_Chrome_Browser
-And Load the application URL 'http://leaftaps.com/opentaps/control/main'
+#Given Open_the_Chrome_Browser
+#And Load the application URL 'http://leaftaps.com/opentaps/control/main'
 And Enter the username as <username>
 And Enter the password as <password>
 When click on Login button
@@ -15,10 +16,10 @@ Examples:
 |'Demosalesmanager'|'crmsfa'|
 |'DemoCSR'|'crmsfa'|
 
-
+@functional
 Scenario: TC002_Login with negative data
-Given Open_the_Chrome_Browser
-And Load the application URL 'http://leaftaps.com/opentaps/control/main'
+#Given Open_the_Chrome_Browser
+#And Load the application URL 'http://leaftaps.com/opentaps/control/main'
 And Enter the username as 'DemoCSR'
 And Enter the password as 'crmsfa123'
 When click on Login button

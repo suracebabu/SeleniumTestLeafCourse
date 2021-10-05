@@ -1,15 +1,15 @@
 Feature: Create Lead functionality
 
 Background: 
-Given Open_the_Chrome_Browser
-And Load the application URL 'http://leaftaps.com/opentaps/control/main'
+#Given Open_the_Chrome_Browser
+#And Load the application URL 'http://leaftaps.com/opentaps/control/main'
 And Enter the username as 'Demosalesmanager'
 And Enter the password as 'crmsfa'
 And click on Login button
 And Click_CRM_Link
 
 
-
+@functional@smoke
 Scenario Outline: TC001_Login with positive data
 Given Click_on_Lead_Link
 And   Click_on_Create_Lead

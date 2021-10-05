@@ -10,15 +10,14 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class LeadsTestCases {
-	public ChromeDriver driver;
+public class LeadsTestCases extends BaseClass {
+//	public ChromeDriver driver;
 
-	@Given ("Open_the_Chrome_Browser")
-	public void	openBrowser(){
-		WebDriverManager.chromedriver().setup();
-		 driver = new ChromeDriver();
-		 driver.manage().window().maximize();
-	}
+	/* CTRL+SHIFT+/
+	 * @Given ("Open_the_Chrome_Browser") public void openBrowser(){
+	 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
+	 * driver.manage().window().maximize(); }
+	 */
 
 	@Given("Load the application URL {string}")
 	public void	loadURL(String url){
@@ -26,16 +25,7 @@ public class LeadsTestCases {
 
 	}
 
-	@Given("Enter the username as {string}")
-	public void	enterUserName(String userName){
-		driver.findElement(By.id("username")).sendKeys(userName);
-		
-	}
 
-	@Given("Enter the password as {string}")
-	public void	enterPassword(String password){
-		driver.findElement(By.id("password")).sendKeys(password);
-	}
 
 	@Given ("Enter_the_companyName as {string}")
 	public void enterCompanyName(String companyName) {
@@ -59,13 +49,7 @@ public class LeadsTestCases {
 	
 
 
-	@When("click on Login button")
-	public void	clickLoginButton(){
-		driver.findElement(By.className("decorativeSubmit")).click();
-		
 
-	}
-	
 	@When("Click_on_CreateLead_SubmitButton")
 	public void clickCreateLeadSubmit() {
 		
